@@ -9,13 +9,12 @@ javascript **Math.random();**
 
 const rollDice = faces => Math.floor(Math.random() * faces + 1);
 
-if(faces == [10,10]){
-    console.log("")
-}
+
 
 console.log("el numero es: "+rollDice(10));
 console.log("el numero es: "+rollDice(10));
 console.log("el numero es: "+rollDice(10));
+
 
 
 

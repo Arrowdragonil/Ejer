@@ -1,10 +1,9 @@
 //Iteración #1: Buscar el máximo
-function sum(numberOne , numberTwo) {
-    numberOne = 1;
-    numberTwo = 2;z
+const array = [1,2,69,17];
 
-    console.log(sum.max)
-
-};return sum;
-
-//Pendiente
+function max(numberOne , numberTwo) {
+    
+    return Math.max(numberOne,numberTwo);
+    
+};
+console.log(array.reduce(max));

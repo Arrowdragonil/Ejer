@@ -18,21 +18,17 @@ const nameFinder = [
     'Jessica',
     'Marc'
   ];
-  function finderName(param) {
-    const i = [];
-    const element = "Peter";
-
-    const all = nameFinder.indexOf(element);
-
-    if(all != -1){
-
-        nameFinder.push(all);
-        all = i.indexOf(element, all, +1);
-    }
-
-    console.log(nameFinder);
-
+  function finderName(param , nombre) {
+    for (const nombre1 of nameFinder) {
+      if (nombre1 == nombre) {
+        return true + param.indexOf(nombre);
+      }else{
+        /* console.log("nanai") */
+      }
+        
+      
+    }return false;
+    
 
   }
-
-  //Pendiente
+    console.log(finderName(nameFinder, 'Xana'));

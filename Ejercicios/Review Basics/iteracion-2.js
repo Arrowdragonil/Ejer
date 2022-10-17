@@ -35,3 +35,27 @@ const users = [
         }
     },
 ]   
+
+let volumen = 0;
+let sonido = 0;
+
+for (const user of users) {
+    for (const i in user) {
+        let userIndex = users.indexOf(user);
+            if (i === "favoritesSounds") {
+                for (const i in users[userIndex].favoritesSounds) {
+                let soundName = i;
+                for (const i in users[userIndex].favoritesSounds[soundName]) {
+                    if (i === "volume") {
+                    volumen += users[userIndex].favoritesSounds[soundName].volume;
+                    sonido += 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+console.log(volumen);
+console.log(sonido);
+console.log(`Media: ${volumen / sonido}`);

@@ -39,3 +39,25 @@ const users = [
         }
     },
 ]
+
+const sonido = {};
+
+for (const user of users) {
+for (const favorito in user) {
+
+
+if (favorito == "favoritesSounds") {
+    for (const sound in users[users.indexOf(user)].favoritesSounds) {
+        if (Object.keys(sonido).includes(sound)) {
+            sonido[sound] += 1;
+        } else {
+            sonido[sound] = 1;
+        }
+      }
+    }
+
+    
+  }
+}
+
+console.log(sonido);

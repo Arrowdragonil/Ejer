@@ -7,16 +7,20 @@ const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
 const averageWord = (array) => {
    
     let sum = 0;
-    const str = ""; 
-    for(let i=0; i<array.length;i++){
-      
+    for(let i=0; i<array.length -1;i++){
+      if (typeof array[i] === "number") {
+        sum += array[i];
+      }else if (typeof array[i] === "string") {
+        sum += array[i].length;
+
+      }
        
-        sum +=  array[i];
+        
 
         
 
-    }return str.length ;
+    }return sum / array.length;
 }
    console.log(averageWord(mixedElements));
 
-   //Pendiente
+  
